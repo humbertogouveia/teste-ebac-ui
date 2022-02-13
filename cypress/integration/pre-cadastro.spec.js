@@ -11,7 +11,7 @@ describe('Funcionalidade Pré Cadastro', () => {
 
 
     it('Deve completar o pré cadastro com sucesso', () => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        cy.visit('minha-conta/')
         cy.get('#reg_email').type(emailFaker)
         cy.get('#reg_password').type(passwordFaker)
         cy.get(':nth-child(4) > .button').click()
