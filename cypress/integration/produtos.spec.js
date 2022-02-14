@@ -3,7 +3,7 @@
 describe('Funcionalidade Página de produtos', () => {
 
     beforeEach(() => {
-        cy.visit('produtos/')
+        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
 
     })
     it('Deve selecionar o primeiro produto da lista', () => {
@@ -27,9 +27,8 @@ describe('Funcionalidade Página de produtos', () => {
             .click()
     })
 
-    it.only('Deve adicionar um produto ao carrinho', () => {
+    it('Deve adicionar um produto ao carrinho', () => {
         let quantidade = 2
-        let produto = '"Argus All-Weather Tank"'
 
         cy.get('[class="product-block grid"]')
             .contains('Argus All-Weather Tank')
@@ -40,6 +39,15 @@ describe('Funcionalidade Página de produtos', () => {
         cy.get('.single_add_to_cart_button').click()
 
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
-        cy.get('.woocommerce-message').should('contain', `${quantidade}`).and('contain','Argus All-Weather Tank')
+        cy.get('.woocommerce-message')
+             .should('contain', `${quantidade}`)
+              .and('contain','Argus All-Weather Tank')
+    })
+
+    it('Deve adicionar um produto ao carrinho utilizando comando customizado',()=>{
+        cy.addProdutos('Argus All-Weather Tank','S',3)
+    })
+    it.only('Deve adicionar um produto ao carrinho utilizando comando customizado',()=>{
+        cy.addProdutos('Aero Daily Fitness Tee','S','Black',2)
     })
 })
