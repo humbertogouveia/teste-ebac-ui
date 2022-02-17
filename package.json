@@ -22,7 +22,9 @@
   },
   "homepage": "",
   "devDependencies": {
-    "cypress": "^8.2.0"
+    "@faker-js/faker": "^6.0.0-alpha.6",
+    "cypress": "^8.2.0",
+    "leite": "^0.2.0"
   },
   "dependencies": {
     "faker-js": "^1.0.0",
