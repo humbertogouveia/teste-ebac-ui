@@ -7,9 +7,8 @@ Neste repositório realizei na prática a automação de um e-commerce utilizand
 
 ## 
 
-Em um exercício da EBAC, realizamos a cobertura de testes nos cenários: 
+Em um exercício da EBAC, utilizando Page Objects, realizei a cobertura de testes nos cenários: 
 
-- Utilização de Page Objects
 - Realizar login com sucesso no site
 - Realizar login utilizando Fixtures
 - Realizar pré-cadastro de usuário
