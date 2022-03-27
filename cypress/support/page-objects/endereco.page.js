@@ -17,16 +17,10 @@ class EnderecoPage {
             .click()
             .type(`${estado}{enter}`)
         cy.get('#shipping_postcode').clear().type(cep)
-        cy.get('.button').click()
-
-
+        cy.get('[name=save_address]').click()
 
     }
 
-    editarEnderecoEntrega() {
-        //Elementos + Ações
-
-    }
 
 }
 
