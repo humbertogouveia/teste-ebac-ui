@@ -21,7 +21,7 @@ Em um exercício da EBAC, utilizando Page Objects, realizei a cobertura de teste
 Via terminal, rode os seguintes comandos:
 
 ```
-git clone https://github.com/EBAC-QE/testes-e2e-ebac-shop.git
+git clone https://github.com/humbertogouveia/teste-ebac-ui.git
 ```
 
 ```
