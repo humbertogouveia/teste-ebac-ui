@@ -24,10 +24,6 @@ Via terminal, rode os seguintes comandos:
 git clone https://github.com/humbertogouveia/teste-ebac-ui.git
 ```
 
-```
-cd testes-e2e-ebac-shop
-```
-
 #### Para instalar as dependencias:
 
 ```
