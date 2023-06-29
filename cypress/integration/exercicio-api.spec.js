@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import contrato from '../contracts/usuarios.contract'
 
 describe('Testes da Funcionalidade Usuários', () => {
